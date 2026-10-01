@@ -216,3 +216,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Env (keep the example)
+.env
+.env.*
+!.env.example
+
+# Scraper output (keep curated test fixtures)
+scraper/output/
+scraper/*.html
+!scraper/fixtures/**
+
+# Local databases and Docker volumes
+*.sqlite3
+pgdata/
+
+# Playwright artifacts
+test-results/
+playwright-report/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
