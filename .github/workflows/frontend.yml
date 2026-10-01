@@ -1,0 +1,9 @@
+name: frontend
+on: [push, pull_request]
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
